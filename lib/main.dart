@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hoodie_yay/menu.dart';
+import 'package:hoodie_yay/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
