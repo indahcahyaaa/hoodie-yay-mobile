@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hoodie_yay/screens/list_productentry.dart';
 import 'package:hoodie_yay/screens/menu.dart';
 import 'package:hoodie_yay/screens/productentry_form.dart';
 
@@ -55,7 +56,7 @@ class LeftDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.inventory),
+            leading: const Icon(Icons.production_quantity_limits),
             title: const Text('Tambah Produk'),
             // Bagian redirection ke ProductEntryFormPage
             onTap: () {
@@ -69,6 +70,16 @@ class LeftDrawer extends StatelessWidget {
                   builder: (context) => const ProductEntryFormPage(),
                 ),
               );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.inventory),
+            title: const Text('Daftar Product'),
+            onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductEntryPage()),
+                );
             },
           ),
         ],
